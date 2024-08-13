@@ -1,21 +1,97 @@
 # Python-Project--Cricket-Quiz-game
 
-This Cricket Quiz Game is a simple Python project created by Aanjenay Pandey, designed to test and showcase basic Python programming skills. The game presents a series of single-answer questions related to cricket. If a player answers incorrectly, the game ends immediately.
 
-Features:
-Single-Answer Questions: Players must answer each question correctly to proceed. Incorrect answers end the game.Conditional Logic: Uses if-else statements to check answers and control game flow.User Input Handling: Collects user responses and provides feedback based on the correctness of the answers.
 
-Technical Skills Demonstrated:
+# Welcome message for the quiz game
+print("Welcome to the Cricket Quiz Game created by Aanjenay Pandey")
 
-User Input: Captures and processes user input for interactive gameplay.
+# Ask the user if they want to play the game
+playing = input("Do you want to play the game? ")
 
-Conditional Statements: Implements if-else statements to determine game progression ination.
+# If the user's response is not 'yes', exit the game
+if playing.lower() != "yes":
+    quit()
 
-Basic Functions: Utilizes fundamental Python functions to structure the game and manage user interaction.
+# Inform the user that the game is starting
+print("Okay, let's play!")
+score = 0
 
-How to Play:
-1-Run the Python script to start the game.
-1-Answer each question as prompted.
-The game continues until a question is answered incorrectly, which ends the game.
+# Question 1: Highest run scorer in ODI
+answer = input("Who is the highest run scorer in ODI? ")
 
-This project demonstrates fundamental Python concepts and is a great example of how basic programming skills can be used to create interactive applications.It’s ideal for anyone looking to understand the basics of Python programming and conditional logic  repository, 
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "sachin tendulkar":
+    print("Congratulations! Your answer is correct.")
+    score += 1
+else:
+    print("Sorry, your answer is incorrect & unfortunately, the game is over.")
+    quit()
+
+# Question 2: Winner of ICC ODI World Cup 2023
+answer = input("Who is the winner of ICC ODI World Cup 2023? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "australia":
+    print("Congratulations, you're doing good!")
+    score += 1
+else:
+    print("Sorry, your answer is wrong, so unfortunately your game is over.")
+    quit()
+
+# Question 3: Current captain of the Indian Test cricket team
+answer = input("Who is the current captain of the Indian Test cricket team? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "rohit sharma":
+    print("Congratulations, Champ! Correct answer.")
+    score += 1
+else:
+    print("Sorry, your answer is incorrect. Better luck next time.")
+    quit()
+
+# Question 4: Location of Wankhede Stadium
+answer = input("Where is Wankhede Stadium located? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "mumbai":
+    print("Congratulations! Your answer is correct, Champ.")
+    score += 1
+else:
+    print("Sorry, your game is over, but be proud of yourself because you answered all previous questions correctly.")
+    quit()
+
+# Question 5: Team that won IPL 2024
+answer = input("Which team won IPL 2024? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "kkr":
+    print("Congratulations! Your answer is correct.")
+    score += 1
+else:
+    print("Sorry, your game is over.")
+    quit()
+
+# Question 6: Winner of ICC Champions Trophy 2013
+answer = input("Who was the winner of ICC Champions Trophy 2013? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "india":
+    print("Congratulations! Your answer is correct, and you are qualified for the final round of our game.")
+    score += 1
+else:
+    print("Sorry, your game is over. But be proud of yourself because you played well.")
+    quit()
+
+# Question 7: Winner of ICC T20 World Cup Final 2024
+answer = input("Which team won the ICC T20 World Cup Final 2024? ")
+
+# Check if the answer is correct and update the score accordingly
+if answer.lower() == "india":
+    print("Congratulations! You are the winner of our game.")
+    score += 1
+else:
+    print("Sorry, your game is over. But be proud of yourself because you were disqualified in the final round.")
+    quit()
+
+# Final score announcement
+print("You got " + str(score) + " question(s) correct.")
