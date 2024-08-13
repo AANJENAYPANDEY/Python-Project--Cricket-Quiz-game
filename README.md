@@ -18,4 +18,4 @@ How to Play:
 1-Answer each question as prompted.
 The game continues until a question is answered incorrectly, which ends the game.
 
-This project demonstrates fundamental Python concepts and is a great example of how basic programming skills can be used to create interactive applications. It’s ideal for anyone looking to understand the basics of Python programming and conditional logic  repository, 
+This project demonstrates fundamental Python concepts and is a great example of how basic programming skills can be used to create interactive applications.It’s ideal for anyone looking to understand the basics of Python programming and conditional logic  repository, 
