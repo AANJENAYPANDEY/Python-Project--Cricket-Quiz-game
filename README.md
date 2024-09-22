@@ -1,0 +1,1 @@
+This is a Python-based single-answer type quiz game that tests your knowledge of cricket. The game presents a series of cricket-related questions, and the player must answer each one correctly to earn points. It's a fun and interactive way to challenge yourself and learn more about the sport.
